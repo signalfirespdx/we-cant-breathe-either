@@ -31,6 +31,11 @@ Help us stop the violence`,
         url: 'mailto:PDXSanctuaryAction2025@protonmail.com',
         description: 'Send any footage you capture to the organizers.',
       },
+      {
+        name: 'Want to add to this page?',
+        url: 'mailto:signalfirespdx@protonmail.com',
+        description: 'If you have something that should here, let us know'
+      }
     ],
     freeform: `
 <p>Let's stop letting our Representatives pretend, Let's make them act!<p>
