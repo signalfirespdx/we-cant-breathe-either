@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" x-data="linktree()">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take Action</title>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <pre class="title" x-text="meta.title"></pre>
+      <p x-text="meta.description"></p>
+    </header>
+    <div id="links">
+      <template x-for="link in links" :key="link.url">
+        <a :href="link.url" class="link" target="_blank">
+          <div><strong x-text="link.name"></strong></div>
+          <div class="description" x-text="link.description"></div>
+        </a>
+      </template>
+    </div>
+    <div class="freeform" x-html="freeform"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
